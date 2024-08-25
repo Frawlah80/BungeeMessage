@@ -1,0 +1,61 @@
+##################################################
+#                                                #
+#          BUNGEECORD MESSAGE PLUGIN             #
+#                by @iFedeFC                     #
+#                                                #
+##################################################
+
+Prefix: ''
+Player_Offline: '&cThis player not is online'
+Usage: '&cIncorrect, usage: /msg <player> <msg>'
+Reply_Usage: '&cIncorrect, usage: /reply <msg> or /r <msg>'
+No_Player_Reply: '&cYou dont have any player to reply'
+No_Message_Yourself: '&cYou can not send a message to yourself'
+No_Permission: '&cYou dont have permission to use this command'
+No_Reply_Permission: '&cYou dont have permission to reply message'
+
+
+# Format variables:
+# - %sender-name%
+# - %sender-server%
+# - %receiver-name%
+# - %receiver-server%
+# - %msg%
+
+Sender_Format: '&dTo &r%receiver-prefix%%receiver-name%&7: %msg%'
+Receiver_Format: '&dFrom &r%sender-prefix%%sender-name%&7: %msg%'
+
+
+StaffChat_Enabled: false
+StaffChat_Disabled: '&cSorry, but this function is disabled'
+StaffChat_Format: '&6[STAFF CHAT] &7[%server%] &6%player%: &b%msg%'
+Staff_Chat_Off: '&cYou left the chat staff!'
+Staff_Chat_On: '&aNow you are in staff chat mode!'
+
+SocialSpy_Off: '&cYou has been disactivated the social spy'
+SocialSpy_On: '&aYou has been activated the social spy'
+SocialSpy_Format: '&6[SOCIAL SPY] &f%sender% &6> &f%receiver%&7: &9%msg%'
+
+
+HelpOp_Enabled: false
+HelpOp_Disabled: '&cSorry, but this function is disabled'
+#Time in seconds
+HelpOp_Cooldown: 60
+Cooldown_Wait: '&cYou must wait %time% to use the helpop again'
+HelpOp_Format: '&6[HELP OP] &e(%server%) &f%player%&7: &f%msg%'
+HelpOp_Sended: '&aYou have successfully sent the help by helpop'
+HelpOp_Usage: '&cUsage: /helpop <msg>'
+
+
+BroadCast_Enabled: false
+BroadCast_Disabled: '&cSorry, but this function is disabled'
+#Time in seconds
+BroadCast_Cooldown: 20
+BroadCast_Cooldown_Wait: '&cYou must wait %time% to use the broadcast again'
+BroadCast_Format: '&c&l[BROADCAST] &d> &7%msg%'
+BroadCast_Sended: '&aThe broadcast has been sent correctly'
+BroadCast_Usage: '&cUsage: /bc <msg>'
+
+Messages_Disabled: '&cSorry, &e%player% &chave messages disabled, you can not send one'
+ReceiveMessages_Enabled: '&aNow you can receive messages'
+ReceiveMessages_Disabled: '&cNow you can''t receive messages'
